@@ -1,51 +1,112 @@
 <!DOCTYPE html>
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Xây dựng trang web</title>
-      <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Bố cục trang web</title>
+
+<style>
+    body{
+        margin:0;
+        padding:40px;
+        font-family: Arial, sans-serif;
+    }
+
+    .layout{
+        display:flex;
+        gap:40px;
+    }
+
+    /* CỘT TRÁI */
+    .left{
+        width:45%;
+    }
+
+    .img-small{
+        height:120px;
+        background:#ccc;
+        margin-bottom:20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .text-box{
+        height:80px;
+        background:#eee;
+        margin-bottom:20px;
+    }
+
+    .img-large{
+        height:350px;
+        background:#ccc;
+        margin-bottom:20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    /* CỘT PHẢI */
+    .right{
+        width:55%;
+    }
+
+    .title{
+        height:50px;
+        background:#eee;
+        margin-bottom:20px;
+    }
+
+    .content{
+        height:200px;
+        background:#eee;
+        margin-bottom:20px;
+    }
+</style>
 </head>
+
 <body>
-<div class="container">
-    <!-- Cột trái -->
+
+<div class="layout">
+
+    <!-- CỘT TRÁI -->
     <div class="left">
-        <div class="image-small">Image</div>
-        <div class="image-small">Image</div>
-        <div class="image-small">Image</div>
-
-        <div class="image-large">Image</div>
-        <p>
-            Some text.  
+           <p>
+          Some text.  
             Sunt in culpa qui officia deserunt mollit anim id est laborum
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua.
         </p>
+        <div class="">More text</div>
+        
+        <div class="img-small">Image</div>
+        <div class="img-small">Image</div>
+        <div class="img-small">Image</div>
+
     </div>
 
-    <!-- Cột phải -->
+    <!-- CỘT PHẢI -->
     <div class="right">
-        <h1>Xây dựng trang web dùng HTML và CSS có giao diện như sau</h1>
-        <p>
-            Some text.  
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-        </p>
-
-        <div class="more-text">More Text</div>
-        <p>Lorem ipsum dolor sit amet.</p>
-
-        <h2>TITLE HEADING</h2>
-        <div class="date">Title description, Sep 2, 2024</div>
-        <p>
-             <div class="image-small">Image</div>
-            Some text.  
+           <p>
+         <div class="">Some text</div>
+               
             Sunt in culpa qui officia deserunt mollit anim id est laborum
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua.
         </p>
+        <div class="title">TITLE HEADING</div>
+  <div class="date">Title description, Sep 2, 2024</div>
+                <div class="img-large">Image</div>
+           <p>
+            <div class="">Some text</div>
+               
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+        </p>
+        <div class="content"></div>
     </div>
+
 </div>
 
 </body>
-</html>
+</html>,
