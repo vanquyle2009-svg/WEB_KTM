@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bố cục trang web</title>
+
+<style>
+    body{
+        margin:0;
+        padding:40px;
+        font-family: Arial, sans-serif;
+    }
+
+    .layout{
+        display:flex;
+        gap:40px;
+    }
+
+    /* CỘT TRÁI */
+    .left{
+        width:45%;
+    }
+
+    .box-small{
+        height:120px;
+        background:#ccc;
+        margin-bottom:20px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .box-large{
+        height:350px;
+        background:#ccc;
+        margin-top:20px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    /* CỘT PHẢI */
+    .right{
+        width:55%;
+    }
+
+    .title{
+        height:40px;
+        background:#eee;
+        margin-bottom:20px;
+    }
+
+    .text{
+        height:120px;
+        background:#eee;
+        margin-bottom:20px;
+    }
+
+    .text-small{
+        height:60px;
+        background:#eee;
+        margin-bottom:20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- CỘT TRÁI -->
+    <div class="left">
+        <div class="box-small">Image</div>
+        <div class="box-small">Image</div>
+        <div class="box-small">Image</div>
+
+        <div class="box-large">Image</div>
+    </div>
+
+    <!-- CỘT PHẢI -->
+    <div class="right">
+        <div class="title"></div>
+        <div class="text"></div>
+
+        <div class="text-small"></div>
+        <div class="text"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
