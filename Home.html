@@ -1,92 +1,113 @@
 <!DOCTYPE html>
-<html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Bố cục trang web</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-<style>
-    body{
-        margin:0;
-        padding:40px;
-        font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <title>Xây dựng trang web</title>
+      <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
 
-    .layout{
-        display:flex;
-        gap:40px;
-    }
+        .container {
+            display: flex;
+            gap: 40px;
+        }
 
-    /* CỘT TRÁI */
-    .left{
-        width:45%;
-    }
+        /* Cột trái */
+        .left {
+            width: 45%;
+        }
 
-    .box-small{
-        height:120px;
-        background:#ccc;
-        margin-bottom:20px;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
+        .image-small {
+            background: #ccc;
+            height: 120px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+        }
 
-    .box-large{
-        height:350px;
-        background:#ccc;
-        margin-top:20px;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
+        .image-large {
+            background: #ccc;
+            height: 350px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+        }
 
-    /* CỘT PHẢI */
-    .right{
-        width:55%;
-    }
+        /* Cột phải */
+        .right {
+            width: 55%;
+        }
 
-    .title{
-        height:40px;
-        background:#eee;
-        margin-bottom:20px;
-    }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
 
-    .text{
-        height:120px;
-        background:#eee;
-        margin-bottom:20px;
-    }
+        h2 {
+            font-size: 22px;
+            margin-top: 40px;
+        }
 
-    .text-small{
-        height:60px;
-        background:#eee;
-        margin-bottom:20px;
-    }
-</style>
+        .date {
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .more-text {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="layout">
-
-    <!-- CỘT TRÁI -->
+<div class="container">
+    <!-- Cột trái -->
     <div class="left">
-        <div class="box-small">Image</div>
-        <div class="box-small">Image</div>
-        <div class="box-small">Image</div>
+        <div class="image-small">Image</div>
+        <div class="image-small">Image</div>
+        <div class="image-small">Image</div>
 
-        <div class="box-large">Image</div>
+        <div class="image-large">Image</div>
+        <p>
+            Some text.  
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+        </p>
     </div>
 
-    <!-- CỘT PHẢI -->
+    <!-- Cột phải -->
     <div class="right">
-        <div class="title"></div>
-        <div class="text"></div>
+        <h1>Xây dựng trang web dùng HTML và CSS có giao diện như sau</h1>
+        <p>
+            Some text.  
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+        </p>
 
-        <div class="text-small"></div>
-        <div class="text"></div>
+        <div class="more-text">More Text</div>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h2>TITLE HEADING</h2>
+        <div class="date">Title description, Sep 2, 2024</div>
+        <p>
+            Some text.  
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+        </p>
     </div>
-
 </div>
 
 </body>
