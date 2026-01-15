@@ -1,109 +1,28 @@
 <!DOCTYPE html>
-<html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Bố cục trang web</title>
-
-<style>
-    body{
-        margin:0;
-        padding:40px;
-        font-family: Arial, sans-serif;
-    }
-
-    .layout{
-        display:flex;
-        gap:40px;
-    }
-
-    /* CỘT TRÁI */
-    .left{
-        width:45%;
-    }
-
-    .img-small{
-        height:120px;
-        background:#ccc;
-        margin-bottom:20px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .text-box{
-        height:80px;
-        background:#eee;
-        margin-bottom:20px;
-    }
-
-    .img-large{
-        height:350px;
-        background:#ccc;
-        margin-bottom:20px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    /* CỘT PHẢI */
-    .right{
-        width:55%;
-    }
-
-    .title{
-        height:50px;
-        background:#eee;
-        margin-bottom:20px;
-    }
-
-    .content{
-        height:200px;
-        background:#eee;
-        margin-bottom:20px;
-    }
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<div class="layout">
-
-    <!-- CỘT TRÁI -->
-    <div class="left">
-           <p>
-       Tên: Kubo Nagisa (久保 渚咲)
-
-Tuổi: Học sinh trung học
-
-Vai trò: Nữ chính
-
-Tính cách nổi bật: Dễ thương, tinh nghịch, ấm áp
-        </p>
-        <div class="">More text</div>
-        
-        <div class="vk1.jpg">ẢNH VK</div>
-        <div class="vk3.jpgl">ẢNH VK</div>
-        <div class="vk2.jpg">ẢNH VK</div>
-
+    <div class="container">
+        <div class="left-column">
+            <div class="card">
+                <h3>KUBO NAGISA</h3>
+                <p>Học sinh trung học Vai trò: Nữ chính Tính cách nổi bật: Dễ thương, tinh nghịch, ấm áp.</p>                
+                <h3>VK</h3>
+                <p>Một số hình ảnh củaKUBO NAGISA:</p>                
+				<img src="mtp3.jpg" style="width:100%">
+                 <img src="mtp2.jpeg" style="width:100%">
+                 <img src="mtp1.jpg" style="width:100%">
+            </div>
+        </div>
+       <div class="right-column">
+            <div class="card">
+                <h2>KUBO LÀ VK TUI:</h2>
+                <h5>NGÀY 15, 2026.</h5>
+                                 <img src="mtp.jpg" style="width:100%">                
+                <p>TÓM LẠI Kubo đại diện cho kiểu nữ chính dịu dàng, chủ động, mang lại cảm giác chữa lành và ngọt ngào cho câu chuyện.</p>
+            </div>
+        </div>
     </div>
-
-    <!-- CỘT PHẢI -->
-    <div class="right">
-           <p>
-         <div class=""> SỞ THIK KUBO NAGISA</div> 
-         Quan tâm và chăm sóc người khác, Đi chơi cùng bạn bè, Chụp ảnh, lưu giữ kỷ niệm,Những điều dễ thương, lãng mạn
-        </p>
-        <div class="title">TITLE HEADING</div>
-  <div class="date">Title description, Sep 2, 2024</div>
-                <div class="vk chibi.jpg">ẢNH VK</div>
-           <p>
-            <div class="">TÓM LẠI</div>
-       Kubo đại diện cho kiểu nữ chính dịu dàng, chủ động, mang lại cảm giác chữa lành và ngọt ngào cho câu chuyện.
-        </p>
-        <div class="content"></div>
-    </div>
-
-</div>
-
 </body>
-</html>,
+</html>
